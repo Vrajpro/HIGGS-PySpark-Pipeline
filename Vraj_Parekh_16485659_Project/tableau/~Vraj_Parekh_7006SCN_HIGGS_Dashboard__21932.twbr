@@ -1,0 +1,1757 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20253.25.1210.1815                               -->
+<workbook original-version='18.1' source-build='2025.3.1 (20253.25.1210.1815)' source-platform='win' version='18.1' xml:base='https://localhost:8080' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location derived-from='https://public.tableau.com/workbooks/Vraj_Parekh_7006SCN_HIGGS_Dashboard?rev=1.0' id='Vraj_Parekh_7006SCN_HIGGS_Dashboard' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='HIGGS_tableau_extract' inline='true' name='federated.13bfx6a1pl8f3d1b3slya0s3hdix' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='HIGGS_tableau_extract' name='textscan.1lom14h04b13un19ctmfy10hbu92'>
+            <connection class='textclean' cleaning='yes' compat='no' csvFile='C:/Users/91846/Downloads/HIGGS_tableau_extract.csv' dataRefreshTime='' directory='C:/Users/91846/Downloads' interpretationMode='8' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1lom14h04b13un19ctmfy10hbu92' name='HIGGS_tableau_extract.csv' table='[HIGGS_tableau_extract#csv$]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:F10001:no:A1:F10001:1' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='label' ordinal='0' />
+            <column datatype='integer' name='prediction' ordinal='1' />
+            <column datatype='real' name='feature_1' ordinal='2' />
+            <column datatype='real' name='feature_2' ordinal='3' />
+            <column datatype='real' name='feature_3' ordinal='4' />
+            <column datatype='real' name='feature_22' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[HIGGS_tableau_extract.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:F10001:no:A1:F10001:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>59994</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>label</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[label]</local-name>
+            <parent-name>[HIGGS_tableau_extract.csv]</parent-name>
+            <remote-alias>label</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[HIGGS_tableau_extract.csv_26E42FB102C04BEE9A7ADA48CCED2D64]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>prediction</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[prediction]</local-name>
+            <parent-name>[HIGGS_tableau_extract.csv]</parent-name>
+            <remote-alias>prediction</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[HIGGS_tableau_extract.csv_26E42FB102C04BEE9A7ADA48CCED2D64]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>feature_1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[feature_1]</local-name>
+            <parent-name>[HIGGS_tableau_extract.csv]</parent-name>
+            <remote-alias>feature_1</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[HIGGS_tableau_extract.csv_26E42FB102C04BEE9A7ADA48CCED2D64]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>feature_2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[feature_2]</local-name>
+            <parent-name>[HIGGS_tableau_extract.csv]</parent-name>
+            <remote-alias>feature_2</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[HIGGS_tableau_extract.csv_26E42FB102C04BEE9A7ADA48CCED2D64]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>feature_3</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[feature_3]</local-name>
+            <parent-name>[HIGGS_tableau_extract.csv]</parent-name>
+            <remote-alias>feature_3</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[HIGGS_tableau_extract.csv_26E42FB102C04BEE9A7ADA48CCED2D64]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>feature_22</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[feature_22]</local-name>
+            <parent-name>[HIGGS_tableau_extract.csv]</parent-name>
+            <remote-alias>feature_22</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[HIGGS_tableau_extract.csv_26E42FB102C04BEE9A7ADA48CCED2D64]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='HIGGS_tableau_extract.csv' datatype='table' name='[__tableau_internal_object_id__].[HIGGS_tableau_extract.csv_26E42FB102C04BEE9A7ADA48CCED2D64]' role='measure' type='quantitative' />
+      <column caption='Feature 1' datatype='real' name='[feature_1]' role='measure' type='quantitative' />
+      <column caption='Feature 22' datatype='real' name='[feature_22]' role='measure' type='quantitative' />
+      <column caption='Feature 2' datatype='real' name='[feature_2]' role='measure' type='quantitative' />
+      <column caption='Feature 3' datatype='real' name='[feature_3]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Label' datatype='integer' name='[label]' role='dimension' type='ordinal'>
+        <aliases>
+          <alias key='0' value='Background Noise' />
+          <alias key='1' value='Higgs Boson ' />
+        </aliases>
+      </column>
+      <column aggregation='Sum' caption='Prediction' datatype='integer' name='[prediction]' role='dimension' type='ordinal'>
+        <aliases>
+          <alias key='0' value='Background Noise' />
+          <alias key='1' value='Higgs Boson Signal' />
+        </aliases>
+      </column>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/#TableauTemp_1nfj7ze047eh041dsobfm06epi4g.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='02/15/2026 09:44:57 AM' username=''>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>label</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[label]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>label</remote-alias>
+              <ordinal>0</ordinal>
+              <family>HIGGS_tableau_extract.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[HIGGS_tableau_extract.csv_26E42FB102C04BEE9A7ADA48CCED2D64]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>prediction</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[prediction]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>prediction</remote-alias>
+              <ordinal>1</ordinal>
+              <family>HIGGS_tableau_extract.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[HIGGS_tableau_extract.csv_26E42FB102C04BEE9A7ADA48CCED2D64]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>feature_1</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[feature_1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>feature_1</remote-alias>
+              <ordinal>2</ordinal>
+              <family>HIGGS_tableau_extract.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6684</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[HIGGS_tableau_extract.csv_26E42FB102C04BEE9A7ADA48CCED2D64]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>feature_2</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[feature_2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>feature_2</remote-alias>
+              <ordinal>3</ordinal>
+              <family>HIGGS_tableau_extract.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4795</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[HIGGS_tableau_extract.csv_26E42FB102C04BEE9A7ADA48CCED2D64]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>feature_3</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[feature_3]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>feature_3</remote-alias>
+              <ordinal>4</ordinal>
+              <family>HIGGS_tableau_extract.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6245</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[HIGGS_tableau_extract.csv_26E42FB102C04BEE9A7ADA48CCED2D64]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>feature_22</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[feature_22]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>feature_22</remote-alias>
+              <ordinal>5</ordinal>
+              <family>HIGGS_tableau_extract.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20167</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[HIGGS_tableau_extract.csv_26E42FB102C04BEE9A7ADA48CCED2D64]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='HIGGS_tableau_extract.csv' id='HIGGS_tableau_extract.csv_26E42FB102C04BEE9A7ADA48CCED2D64'>
+            <properties context=''>
+              <relation connection='textscan.1lom14h04b13un19ctmfy10hbu92' name='HIGGS_tableau_extract.csv' table='[HIGGS_tableau_extract#csv$]' type='table'>
+                <columns character-set='UTF-8' gridOrigin='A1:F10001:no:A1:F10001:1' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='label' ordinal='0' />
+                  <column datatype='integer' name='prediction' ordinal='1' />
+                  <column datatype='real' name='feature_1' ordinal='2' />
+                  <column datatype='real' name='feature_2' ordinal='3' />
+                  <column datatype='real' name='feature_3' ordinal='4' />
+                  <column datatype='real' name='feature_22' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource inline='true' name='Clipboard_20260221T133431' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Clipboard_20260221T133431' name='Clipboard_20260221T133431leaf'>
+            <connection class='textscan' directory='C:/Users/91846/AppData/Local/Temp/TableauTemp/1u4l27o067l5o312m5ajh1jox431' filename='Clipboard_20260221T133431.txt' temporary='yes' />
+          </named-connection>
+        </named-connections>
+        <relation connection='Clipboard_20260221T133431leaf' name='Clipboard_20260221T133431#txt' table='[Clipboard_20260221T133431#txt]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='Model' ordinal='0' />
+            <column datatype='real' name='Training_Time_Seconds' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Clipboard_20260221T133431#txt]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Model</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Model]</local-name>
+            <parent-name>[Clipboard_20260221T133431#txt]</parent-name>
+            <remote-alias>Model</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Clipboard_20260221T133431]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Training_Time_Seconds</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Training_Time_Seconds]</local-name>
+            <parent-name>[Clipboard_20260221T133431#txt]</parent-name>
+            <remote-alias>Training_Time_Seconds</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Clipboard_20260221T133431]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Training Time Seconds' datatype='real' name='[Training_Time_Seconds]' role='measure' type='quantitative' />
+      <column caption='Clipboard_20260221T133431' datatype='table' name='[__tableau_internal_object_id__].[Clipboard_20260221T133431]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp 1/#TableauTemp_0u0p17x0d1ppwr18ir37u012yrva.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='02/21/2026 01:34:31 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Model</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Model]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Model</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Clipboard_20260221T133431#txt</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Training_Time_Seconds</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Training_Time_Seconds]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Training_Time_Seconds</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Clipboard_20260221T133431#txt</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Clipboard_20260221T133431' id='Clipboard_20260221T133431'>
+            <properties context=''>
+              <relation connection='Clipboard_20260221T133431leaf' name='Clipboard_20260221T133431#txt' table='[Clipboard_20260221T133431#txt]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='Model' ordinal='0' />
+                  <column datatype='real' name='Training_Time_Seconds' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource inline='true' name='Clipboard_20260228T122826' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Clipboard_20260228T122826' name='Clipboard_20260228T122826leaf'>
+            <connection class='textscan' directory='C:/Users/91846/AppData/Local/Temp/TableauTemp/0mv6tg3056sjof12uztl71oj2dt7' filename='Clipboard_20260228T122826.txt' temporary='yes' />
+          </named-connection>
+        </named-connections>
+        <relation connection='Clipboard_20260228T122826leaf' name='Clipboard_20260228T122826#txt' table='[Clipboard_20260228T122826#txt]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='Model' ordinal='0' />
+            <column datatype='real' name='Time' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Clipboard_20260228T122826#txt]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Model</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Model]</local-name>
+            <parent-name>[Clipboard_20260228T122826#txt]</parent-name>
+            <remote-alias>Model</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Clipboard_20260228T122826]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Time]</local-name>
+            <parent-name>[Clipboard_20260228T122826#txt]</parent-name>
+            <remote-alias>Time</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Clipboard_20260228T122826]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Clipboard_20260228T122826' datatype='table' name='[__tableau_internal_object_id__].[Clipboard_20260228T122826]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp 2/#TableauTemp_0ch28uk03wbjcr12fc2hk0ihwt2u.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='02/28/2026 12:28:26 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Model</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Model]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Model</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Clipboard_20260228T122826#txt</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Time</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Time</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Clipboard_20260228T122826#txt</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Clipboard_20260228T122826' id='Clipboard_20260228T122826'>
+            <properties context=''>
+              <relation connection='Clipboard_20260228T122826leaf' name='Clipboard_20260228T122826#txt' table='[Clipboard_20260228T122826#txt]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='Model' ordinal='0' />
+                  <column datatype='real' name='Time' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Accuracy Breakdown'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='18'>Accuracy Breakdown</run>
+            <run fontalignment='1'>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://public.tableau.com/workbooks/Vraj_Parekh_7006SCN_HIGGS_Dashboard/AccuracyBreakdown?rev=' id='126948731' path='/workbooks/Vraj_Parekh_7006SCN_HIGGS_Dashboard' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='HIGGS_tableau_extract' name='federated.13bfx6a1pl8f3d1b3slya0s3hdix' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13bfx6a1pl8f3d1b3slya0s3hdix'>
+            <column caption='HIGGS_tableau_extract.csv' datatype='table' name='[__tableau_internal_object_id__].[HIGGS_tableau_extract.csv_26E42FB102C04BEE9A7ADA48CCED2D64]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[HIGGS_tableau_extract.csv_26E42FB102C04BEE9A7ADA48CCED2D64]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:HIGGS_tableau_extract.csv_26E42FB102C04BEE9A7ADA48CCED2D64:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Sum' caption='Label' datatype='integer' name='[label]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='Background Noise' />
+                <alias key='1' value='Higgs Boson ' />
+              </aliases>
+            </column>
+            <column-instance column='[label]' derivation='None' name='[none:label:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[prediction]' derivation='None' name='[none:prediction:ok]' pivot='key' type='ordinal' />
+            <column aggregation='Sum' caption='Prediction' datatype='integer' name='[prediction]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='Background Noise' />
+                <alias key='1' value='Higgs Boson Signal' />
+              </aliases>
+            </column>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='width' field='[federated.13bfx6a1pl8f3d1b3slya0s3hdix].[__tableau_internal_object_id__].[cnt:HIGGS_tableau_extract.csv_26E42FB102C04BEE9A7ADA48CCED2D64:qk]' value='60' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.13bfx6a1pl8f3d1b3slya0s3hdix].[none:label:ok]' value='153' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='17' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.13bfx6a1pl8f3d1b3slya0s3hdix].[none:prediction:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.13bfx6a1pl8f3d1b3slya0s3hdix].[__tableau_internal_object_id__].[cnt:HIGGS_tableau_extract.csv_26E42FB102C04BEE9A7ADA48CCED2D64:qk]</rows>
+        <cols>[federated.13bfx6a1pl8f3d1b3slya0s3hdix].[none:label:ok]</cols>
+      </table>
+      <simple-id uuid='{74A138B3-9026-42B6-8095-911E9E6EFB71}' />
+    </worksheet>
+    <worksheet name='Class Distribution (Signal vs Background)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='18'>Class Distribution (Signal vs Background noise)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='HIGGS_tableau_extract' name='federated.13bfx6a1pl8f3d1b3slya0s3hdix' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13bfx6a1pl8f3d1b3slya0s3hdix'>
+            <column caption='HIGGS_tableau_extract.csv' datatype='table' name='[__tableau_internal_object_id__].[HIGGS_tableau_extract.csv_26E42FB102C04BEE9A7ADA48CCED2D64]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[HIGGS_tableau_extract.csv_26E42FB102C04BEE9A7ADA48CCED2D64]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:HIGGS_tableau_extract.csv_26E42FB102C04BEE9A7ADA48CCED2D64:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Sum' caption='Label' datatype='integer' name='[label]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='Background Noise' />
+                <alias key='1' value='Higgs Boson ' />
+              </aliases>
+            </column>
+            <column-instance column='[label]' derivation='None' name='[none:label:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.13bfx6a1pl8f3d1b3slya0s3hdix].[none:label:ok]' />
+              <text column='[federated.13bfx6a1pl8f3d1b3slya0s3hdix].[__tableau_internal_object_id__].[cnt:HIGGS_tableau_extract.csv_26E42FB102C04BEE9A7ADA48CCED2D64:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.13bfx6a1pl8f3d1b3slya0s3hdix].[__tableau_internal_object_id__].[cnt:HIGGS_tableau_extract.csv_26E42FB102C04BEE9A7ADA48CCED2D64:qk]</rows>
+        <cols>[federated.13bfx6a1pl8f3d1b3slya0s3hdix].[none:label:ok]</cols>
+      </table>
+      <simple-id uuid='{A222ED0C-64B3-421E-AB74-A2E6EC4F8EFD}' />
+    </worksheet>
+    <worksheet name='Computational Cost by Algorithm (Seconds)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Tableau Semibold' fontsize='16'>Computational Cost by Algorithm (Seconds)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource name='Clipboard_20260228T122826' />
+            <datasource name='Clipboard_20260221T133431' />
+          </datasources>
+          <datasource-dependencies datasource='Clipboard_20260221T133431'>
+            <column caption='Training Time Seconds' datatype='real' name='[Training_Time_Seconds]' role='measure' type='quantitative' />
+            <column-instance column='[Training_Time_Seconds]' derivation='Sum' name='[sum:Training_Time_Seconds:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='Clipboard_20260228T122826'>
+            <column datatype='string' name='[Model]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Time]' role='measure' type='quantitative' />
+            <column-instance column='[Model]' derivation='None' name='[none:Model:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Time]' derivation='Sum' name='[sum:Time:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[Clipboard_20260228T122826].[sum:Time:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#f28e2b' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[Clipboard_20260228T122826].[none:Model:nk]</rows>
+        <cols>[Clipboard_20260221T133431].[sum:Training_Time_Seconds:qk]</cols>
+      </table>
+      <simple-id uuid='{29C5D9A9-9727-46A2-806E-0F11129E9283}' />
+    </worksheet>
+    <worksheet name='Confusion Matrix'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='18'>Confusion Matrix</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://public.tableau.com/workbooks/Vraj_Parekh_7006SCN_HIGGS_Dashboard/ConfusionMatrix?rev=' id='126948729' path='/workbooks/Vraj_Parekh_7006SCN_HIGGS_Dashboard' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='HIGGS_tableau_extract' name='federated.13bfx6a1pl8f3d1b3slya0s3hdix' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13bfx6a1pl8f3d1b3slya0s3hdix'>
+            <column caption='HIGGS_tableau_extract.csv' datatype='table' name='[__tableau_internal_object_id__].[HIGGS_tableau_extract.csv_26E42FB102C04BEE9A7ADA48CCED2D64]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[HIGGS_tableau_extract.csv_26E42FB102C04BEE9A7ADA48CCED2D64]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:HIGGS_tableau_extract.csv_26E42FB102C04BEE9A7ADA48CCED2D64:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Sum' caption='Label' datatype='integer' name='[label]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='Background Noise' />
+                <alias key='1' value='Higgs Boson ' />
+              </aliases>
+            </column>
+            <column-instance column='[label]' derivation='None' name='[none:label:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[prediction]' derivation='None' name='[none:prediction:ok]' pivot='key' type='ordinal' />
+            <column aggregation='Sum' caption='Prediction' datatype='integer' name='[prediction]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='Background Noise' />
+                <alias key='1' value='Higgs Boson Signal' />
+              </aliases>
+            </column>
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.13bfx6a1pl8f3d1b3slya0s3hdix].[none:label:ok]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.13bfx6a1pl8f3d1b3slya0s3hdix].[none:label:ok]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.13bfx6a1pl8f3d1b3slya0s3hdix].[none:label:ok]' value='48' />
+            <format attr='width' field='[federated.13bfx6a1pl8f3d1b3slya0s3hdix].[none:prediction:ok]' value='126' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.13bfx6a1pl8f3d1b3slya0s3hdix].[none:label:ok]' value='100' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.13bfx6a1pl8f3d1b3slya0s3hdix].[__tableau_internal_object_id__].[cnt:HIGGS_tableau_extract.csv_26E42FB102C04BEE9A7ADA48CCED2D64:qk]' />
+              <text column='[federated.13bfx6a1pl8f3d1b3slya0s3hdix].[__tableau_internal_object_id__].[cnt:HIGGS_tableau_extract.csv_26E42FB102C04BEE9A7ADA48CCED2D64:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='18' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.13bfx6a1pl8f3d1b3slya0s3hdix].[none:label:ok]</rows>
+        <cols>[federated.13bfx6a1pl8f3d1b3slya0s3hdix].[none:prediction:ok]</cols>
+      </table>
+      <simple-id uuid='{BFAEC30D-B1F1-4CC3-B20C-C44E57296CF9}' />
+    </worksheet>
+    <worksheet name='Feature Distribution'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='18'>Feature Distribution</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://public.tableau.com/workbooks/Vraj_Parekh_7006SCN_HIGGS_Dashboard/FeatureDistribution?rev=' id='126948730' path='/workbooks/Vraj_Parekh_7006SCN_HIGGS_Dashboard' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='HIGGS_tableau_extract' name='federated.13bfx6a1pl8f3d1b3slya0s3hdix' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13bfx6a1pl8f3d1b3slya0s3hdix'>
+            <column caption='Feature 22' datatype='real' name='[feature_22]' role='measure' type='quantitative' />
+            <column aggregation='Sum' caption='Label' datatype='integer' name='[label]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='Background Noise' />
+                <alias key='1' value='Higgs Boson ' />
+              </aliases>
+            </column>
+            <column-instance column='[label]' derivation='None' name='[none:label:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[feature_22]' derivation='Sum' name='[sum:feature_22:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[label]' derivation='Sum' name='[sum:label:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='false' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.13bfx6a1pl8f3d1b3slya0s3hdix].[none:label:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.13bfx6a1pl8f3d1b3slya0s3hdix].[sum:feature_22:qk]</rows>
+        <cols>[federated.13bfx6a1pl8f3d1b3slya0s3hdix].[sum:label:ok]</cols>
+      </table>
+      <simple-id uuid='{5D89490C-8BBD-4FD4-9DD7-DCDB3FE5A371}' />
+    </worksheet>
+    <worksheet name='Row Count &amp; Validation'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='18'>Total Clean Rows Processed (0 Missing Values Detected)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='HIGGS_tableau_extract' name='federated.13bfx6a1pl8f3d1b3slya0s3hdix' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13bfx6a1pl8f3d1b3slya0s3hdix'>
+            <column caption='HIGGS_tableau_extract.csv' datatype='table' name='[__tableau_internal_object_id__].[HIGGS_tableau_extract.csv_26E42FB102C04BEE9A7ADA48CCED2D64]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[HIGGS_tableau_extract.csv_26E42FB102C04BEE9A7ADA48CCED2D64]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:HIGGS_tableau_extract.csv_26E42FB102C04BEE9A7ADA48CCED2D64:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.13bfx6a1pl8f3d1b3slya0s3hdix].[__tableau_internal_object_id__].[cnt:HIGGS_tableau_extract.csv_26E42FB102C04BEE9A7ADA48CCED2D64:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='36'>&lt;</run>
+                <run fontsize='36'>[federated.13bfx6a1pl8f3d1b3slya0s3hdix].[__tableau_internal_object_id__].[cnt:HIGGS_tableau_extract.csv_26E42FB102C04BEE9A7ADA48CCED2D64:qk]</run>
+                <run fontsize='36'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{F8BF4463-42C5-4B81-86AF-CD3E1A373275}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Business Insights &amp; Strategic Recommendations'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='20'>Business Insights &amp; Strategic Recommendations</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97858' id='5' param='vert' type-v2='layout-flow' w='99018' x='491' y='1071'>
+            <zone h='6426' id='7' type-v2='title' w='99018' x='491' y='1071'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='91432' id='6' type-v2='layout-basic' w='99018' x='491' y='7497'>
+              <zone forceUpdate='true' h='91432' id='8' type-v2='text' w='99018' x='491' y='7497'>
+                <formatted-text>
+                  <run bold='true' fontcolor='#f28e2b' fontname='Benton Sans Book' fontsize='11'>Section 1: Key Business Insights (The &quot;What We Learned&quot;)</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#f28e2b' fontname='Benton Sans Book' fontsize='11'>Domain Expertise is Crucial:</run>
+                  <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='11'> The engineered, high-level math equations (Features 22-28) provided significantly more predictive power than the raw sensor data (Features 1-21). </run>
+                  <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='11' italic='true'>Insight: Investing in theoretical physicists to engineer features yields higher ROI than simply adding more raw sensors.</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#f28e2b' fontname='Benton Sans Book' fontsize='11'>Proof of Concept Success:</run>
+                  <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='11'> The PySpark pipeline successfully bypassed single-node memory limits, proving that a Big Data architecture can process complex collision data efficiently. The GBT model established a strong baseline accuracy of </run>
+                  <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='11'>69.67%</run>
+                  <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='11'> using only a 5% data sample.</run>
+                  <run>Æ&#10;&#10;</run>
+                  <run bold='true' fontcolor='#f28e2b' fontname='Benton Sans Book' fontsize='11'>Section 2: Strategic Recommendations (The &quot;Next Steps&quot;)</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#f28e2b' fontname='Benton Sans Book' fontsize='11'>1. Cloud Migration for Full Scale:</run>
+                  <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='11'> To push the model&apos;s accuracy past the 70% threshold, it is highly recommended to migrate this exact PySpark codebase to a distributed cloud cluster (e.g., AWS EMR or Databricks). This will allow training on the full 100% dataset (11,000,000 rows) without the 12GB RAM Colab bottleneck.</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#f28e2b' fontname='Benton Sans Book' fontsize='11'>2. Cost-Efficient Storage:</run>
+                  <run fontcolor='#f28e2b' fontname='Benton Sans Book' fontsize='11'> Continue utilizing the </run>
+                  <run bold='true' fontcolor='#f28e2b' fontname='Benton Sans Book' fontsize='11'>Parquet format</run>
+                  <run fontcolor='#f28e2b' fontname='Benton Sans Book' fontsize='11'> and </run>
+                  <run bold='true' fontcolor='#f28e2b' fontname='Benton Sans Book' fontsize='11'>RDD partitioning</run>
+                  <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='11'> strategy in the cloud. This will minimize I/O overhead and keep enterprise cloud computing costs low.</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#f28e2b' fontname='Benton Sans Book' fontsize='11'>3. Feature Focus:</run>
+                  <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='11'> Future data collection efforts should prioritize the high-level kinematic features. Dropping the least important low-level features could further reduce processing time and storage costs without sacrificing model accuracy.</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='20'>Business Insights &amp; Strategic Recommendations</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='46' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97858' id='45' param='vert' type-v2='layout-flow' w='99018' x='491' y='1071'>
+                <zone h='6426' id='7' type-v2='title' w='99018' x='491' y='1071'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='91432' id='8' type-v2='text' w='99018' x='491' y='7497'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#f28e2b' fontname='Benton Sans Book' fontsize='11'>Section 1: Key Business Insights (The &quot;What We Learned&quot;)</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#f28e2b' fontname='Benton Sans Book' fontsize='11'>Domain Expertise is Crucial:</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='11'> The engineered, high-level math equations (Features 22-28) provided significantly more predictive power than the raw sensor data (Features 1-21). </run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='11' italic='true'>Insight: Investing in theoretical physicists to engineer features yields higher ROI than simply adding more raw sensors.</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#f28e2b' fontname='Benton Sans Book' fontsize='11'>Proof of Concept Success:</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='11'> The PySpark pipeline successfully bypassed single-node memory limits, proving that a Big Data architecture can process complex collision data efficiently. The GBT model established a strong baseline accuracy of </run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='11'>69.67%</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='11'> using only a 5% data sample.</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run bold='true' fontcolor='#f28e2b' fontname='Benton Sans Book' fontsize='11'>Section 2: Strategic Recommendations (The &quot;Next Steps&quot;)</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#f28e2b' fontname='Benton Sans Book' fontsize='11'>1. Cloud Migration for Full Scale:</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='11'> To push the model&apos;s accuracy past the 70% threshold, it is highly recommended to migrate this exact PySpark codebase to a distributed cloud cluster (e.g., AWS EMR or Databricks). This will allow training on the full 100% dataset (11,000,000 rows) without the 12GB RAM Colab bottleneck.</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#f28e2b' fontname='Benton Sans Book' fontsize='11'>2. Cost-Efficient Storage:</run>
+                    <run fontcolor='#f28e2b' fontname='Benton Sans Book' fontsize='11'> Continue utilizing the </run>
+                    <run bold='true' fontcolor='#f28e2b' fontname='Benton Sans Book' fontsize='11'>Parquet format</run>
+                    <run fontcolor='#f28e2b' fontname='Benton Sans Book' fontsize='11'> and </run>
+                    <run bold='true' fontcolor='#f28e2b' fontname='Benton Sans Book' fontsize='11'>RDD partitioning</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='11'> strategy in the cloud. This will minimize I/O overhead and keep enterprise cloud computing costs low.</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#f28e2b' fontname='Benton Sans Book' fontsize='11'>3. Feature Focus:</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='11'> Future data collection efforts should prioritize the high-level kinematic features. Dropping the least important low-level features could further reduce processing time and storage costs without sacrificing model accuracy.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{3CBBAEDF-19C7-4864-87C0-0EE0A0BDB9B7}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Data Quality &amp; Pipeline Monitoring'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='20'>Data Quality &amp; Pipeline Monitoring</run>
+            <run fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='20'>.</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97858' id='11' param='vert' type-v2='layout-flow' w='99018' x='491' y='1071'>
+            <zone h='6693' id='12' type-v2='title' w='99018' x='491' y='1071'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='91165' id='7' param='horz' type-v2='layout-flow' w='99018' x='491' y='7764'>
+              <zone h='91165' id='5' type-v2='layout-basic' w='89190' x='491' y='7764'>
+                <zone h='91165' id='3' name='Class Distribution (Signal vs Background)' w='44593' x='491' y='7764'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='45576' id='9' name='Row Count &amp; Validation' w='44597' x='45084' y='7764'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='45589' id='29' type-v2='text' w='44597' x='45084' y='53340'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#f28e2b' fontname='Benton Sans Book' fontsize='14' lmargin='600' rmargin='600'>Pipeline Ingestion &amp; Monitoring:</run>
+                    <run lmargin='600' rmargin='600'>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='14' lmargin='600' rmargin='600'>Raw Data Ingested (PySpark):</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='14' lmargin='600' rmargin='600'> 11,000,000 Rows (7.48 GB)</run>
+                    <run lmargin='600' rmargin='600'>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='14' lmargin='600' rmargin='600'>Processed via Distributed Sample:</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='14' lmargin='600' rmargin='600'> 549,906 Rows</run>
+                    <run lmargin='600' rmargin='600'>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='14' lmargin='600' rmargin='600'>Tableau Extract Size:</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='14' lmargin='600' rmargin='600'> 22,201 Rows</run>
+                    <run lmargin='600' rmargin='600'>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='14' lmargin='600' rmargin='600'>Data Quality Status:</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='14' lmargin='600' rmargin='600'> 100% Dense (0 Missing Values Detected)</run>
+                    <run lmargin='600' rmargin='600'>Æ&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone fixed-size='160' h='91165' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='9828' x='89681' y='7764'>
+                <zone h='9639' id='8' name='Class Distribution (Signal vs Background)' pane-specification-id='0' param='[federated.13bfx6a1pl8f3d1b3slya0s3hdix].[none:label:ok]' type-v2='color' w='9828' x='89681' y='7764'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='20'>Data Quality &amp; Pipeline Monitoring</run>
+                <run fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='20'>.</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='800' minheight='800' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='53' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97858' id='52' param='vert' type-v2='layout-flow' w='99018' x='491' y='1071'>
+                <zone h='6693' id='12' type-v2='title' w='99018' x='491' y='1071'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='91165' id='3' is-fixed='true' name='Class Distribution (Signal vs Background)' w='44594' x='491' y='7764'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9639' id='8' name='Class Distribution (Signal vs Background)' pane-specification-id='0' param='[federated.13bfx6a1pl8f3d1b3slya0s3hdix].[none:label:ok]' type-v2='color' w='9828' x='89681' y='7764'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45577' id='9' is-fixed='true' name='Row Count &amp; Validation' w='44596' x='45085' y='7764'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='45588' id='29' type-v2='text' w='44596' x='45085' y='53341'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#f28e2b' fontname='Benton Sans Book' fontsize='14' lmargin='600' rmargin='600'>Pipeline Ingestion &amp; Monitoring:</run>
+                    <run lmargin='600' rmargin='600'>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='14' lmargin='600' rmargin='600'>Raw Data Ingested (PySpark):</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='14' lmargin='600' rmargin='600'> 11,000,000 Rows (7.48 GB)</run>
+                    <run lmargin='600' rmargin='600'>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='14' lmargin='600' rmargin='600'>Processed via Distributed Sample:</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='14' lmargin='600' rmargin='600'> 549,906 Rows</run>
+                    <run lmargin='600' rmargin='600'>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='14' lmargin='600' rmargin='600'>Tableau Extract Size:</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='14' lmargin='600' rmargin='600'> 22,201 Rows</run>
+                    <run lmargin='600' rmargin='600'>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='14' lmargin='600' rmargin='600'>Data Quality Status:</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='14' lmargin='600' rmargin='600'> 100% Dense (0 Missing Values Detected)</run>
+                    <run lmargin='600' rmargin='600'>Æ&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{A9666A8B-DACE-47D3-B9E2-019B8975FCDD}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Model Performance &amp; Feature Insights'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='20'>Model Performance &amp; Feature Importance</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://public.tableau.com/workbooks/Vraj_Parekh_7006SCN_HIGGS_Dashboard/Dashboard1?rev=' id='126948732' path='/workbooks/Vraj_Parekh_7006SCN_HIGGS_Dashboard' revision='' />
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='51347' id='10' param='horz' type-v2='layout-flow' w='99018' x='491' y='1071'>
+            <zone h='51347' id='5' param='vert' type-v2='layout-flow' w='88146' x='491' y='1071'>
+              <zone h='6426' id='7' type-v2='title' w='88146' x='491' y='1071'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='44921' id='6' type-v2='layout-basic' w='88146' x='491' y='7497'>
+                <zone h='44921' id='8' name='Accuracy Breakdown' w='40495' x='491' y='7497'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='44921' id='12' name='Confusion Matrix' w='47651' x='40986' y='7497'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+            <zone fixed-size='177' h='51347' id='9' is-fixed='true' param='vert' type-v2='layout-flow' w='10872' x='88637' y='1071'>
+              <zone h='9639' id='11' name='Accuracy Breakdown' pane-specification-id='0' param='[federated.13bfx6a1pl8f3d1b3slya0s3hdix].[none:prediction:ok]' type-v2='color' w='10872' x='88637' y='1071'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='9639' id='15' name='Feature Distribution' pane-specification-id='0' param='[federated.13bfx6a1pl8f3d1b3slya0s3hdix].[none:label:ok]' type-v2='color' w='10872' x='88637' y='10710'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='46511' id='14' name='Feature Distribution' w='99018' x='491' y='52418'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='20'>Model Performance &amp; Feature Importance</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1100' minheight='1100' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='79' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98546' id='78' param='vert' type-v2='layout-flow' w='95734' x='2133' y='727'>
+                <zone h='6910' id='7' type-v2='title' w='95734' x='2133' y='727'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='26182' id='8' is-fixed='true' name='Accuracy Breakdown' w='95734' x='2133' y='7637'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6545' id='11' name='Accuracy Breakdown' pane-specification-id='0' param='[federated.13bfx6a1pl8f3d1b3slya0s3hdix].[none:prediction:ok]' type-v2='color' w='95734' x='2133' y='33819'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='26182' id='12' is-fixed='true' name='Confusion Matrix' w='95734' x='2133' y='40364'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='26182' id='14' is-fixed='true' name='Feature Distribution' w='95734' x='2133' y='66546'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6545' id='15' name='Feature Distribution' pane-specification-id='0' param='[federated.13bfx6a1pl8f3d1b3slya0s3hdix].[none:label:ok]' type-v2='color' w='95734' x='2133' y='92728'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{49AD4A7C-F988-4296-8FA4-9D708C0C68F8}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Scalability &amp; Cost Analysis'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='20'>Scalability &amp; Cost Analysis</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97858' id='25' param='vert' type-v2='layout-flow' w='99018' x='491' y='1071'>
+            <zone h='6426' id='26' type-v2='title' w='99018' x='491' y='1071'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='91432' id='23' type-v2='layout-basic' w='99018' x='491' y='7497'>
+              <zone forceUpdate='true' h='45715' id='1' type-v2='text' w='99018' x='491' y='7497'>
+                <formatted-text>
+                  <run bold='true' fontcolor='#f28e2b' fontname='Benton Sans Book' fontsize='12'>Infrastructure &amp; Constraints</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>Env:</run>
+                  <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'> Google Colab (Single-Node) | 2 Cores | 12GB RAM</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>Challenge:</run>
+                  <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'> 7.48 GB (11M+ Rows) causes immediate </run>
+                  <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>OOM Failure</run>
+                  <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>.</run>
+                  <run>Æ&#10;&#10;</run>
+                  <run bold='true' fontcolor='#f28e2b' fontname='Benton Sans Book' fontsize='12'>Scalability Strategy</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>Solution:</run>
+                  <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'> Implemented </run>
+                  <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>5% Stratified Pushdown Sample</run>
+                  <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'> to simulate enterprise constraints.</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>Result:</run>
+                  <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'> Reduced processing from System Failure to </run>
+                  <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>4 mins</run>
+                  <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'> while maintaining statistical validity.</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#f28e2b' fontname='Benton Sans Book' fontsize='12'>Data Engineering &amp; Optimization</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>Storage:</run>
+                  <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'> Utilized </run>
+                  <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>Parquet</run>
+                  <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'> format for 3x faster I/O &amp; Tableau extracts.</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>Scaling:</run>
+                  <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>Æ </run>
+                  <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>RDD Partitioning (200)</run>
+                  <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'> ensures pipeline is Cluster-Ready for AWS/Databricks.</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>Metrics:</run>
+                  <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'> Demonstrated </run>
+                  <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>Strong Scaling</run>
+                  <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'> by fixing the problem size against the RAM limit.</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>Efficiency:</run>
+                  <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'> Used </run>
+                  <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>LOD Expressions</run>
+                  <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'> &amp; Parameters for high-speed feature exploration.</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='45717' id='49' name='Computational Cost by Algorithm (Seconds)' w='99018' x='491' y='53212'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='20'>Scalability &amp; Cost Analysis</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='51' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97858' id='50' param='vert' type-v2='layout-flow' w='99018' x='491' y='1071'>
+                <zone h='6426' id='26' type-v2='title' w='99018' x='491' y='1071'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='45716' id='1' type-v2='text' w='99018' x='491' y='7497'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#f28e2b' fontname='Benton Sans Book' fontsize='12'>Infrastructure &amp; Constraints</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>Env:</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'> Google Colab (Single-Node) | 2 Cores | 12GB RAM</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>Challenge:</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'> 7.48 GB (11M+ Rows) causes immediate </run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>OOM Failure</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>.</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run bold='true' fontcolor='#f28e2b' fontname='Benton Sans Book' fontsize='12'>Scalability Strategy</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>Solution:</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'> Implemented </run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>5% Stratified Pushdown Sample</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'> to simulate enterprise constraints.</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>Result:</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'> Reduced processing from System Failure to </run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>4 mins</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'> while maintaining statistical validity.</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#f28e2b' fontname='Benton Sans Book' fontsize='12'>Data Engineering &amp; Optimization</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>Storage:</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'> Utilized </run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>Parquet</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'> format for 3x faster I/O &amp; Tableau extracts.</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>Scaling:</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>Æ </run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>RDD Partitioning (200)</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'> ensures pipeline is Cluster-Ready for AWS/Databricks.</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>Metrics:</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'> Demonstrated </run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>Strong Scaling</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'> by fixing the problem size against the RAM limit.</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>Efficiency:</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'> Used </run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>LOD Expressions</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'> &amp; Parameters for high-speed feature exploration.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45716' id='49' is-fixed='true' name='Computational Cost by Algorithm (Seconds)' w='99018' x='491' y='53213'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{BFA0FBE7-1334-4CA9-809D-A5870E0400D2}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='89'>
+    <window class='dashboard' maximized='true' name='Data Quality &amp; Pipeline Monitoring'>
+      <viewpoints>
+        <viewpoint name='Class Distribution (Signal vs Background)'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Row Count &amp; Validation'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <device-preview visible='true' />
+      <simple-id uuid='{B34A910F-1A5A-403C-956A-EA4751EDCD60}' />
+    </window>
+    <window class='dashboard' name='Model Performance &amp; Feature Insights'>
+      <viewpoints>
+        <viewpoint name='Accuracy Breakdown'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Confusion Matrix'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Feature Distribution'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <device-preview mobileapp-chrome-visible='false' visible='true'>
+        <device name='Generic Tablet' type='Tablet' />
+        <device is-portrait='true' name='Generic Phone' type='Phone' />
+      </device-preview>
+      <simple-id uuid='{2F3353FE-217C-4B3A-8C2F-BB334F2CDE80}' />
+    </window>
+    <window class='dashboard' name='Business Insights &amp; Strategic Recommendations'>
+      <viewpoints />
+      <active id='-1' />
+      <device-preview visible='true' />
+      <simple-id uuid='{50366A1F-C7C7-4172-98B7-ECAC6F17BBC7}' />
+    </window>
+    <window class='dashboard' name='Scalability &amp; Cost Analysis'>
+      <viewpoints>
+        <viewpoint name='Computational Cost by Algorithm (Seconds)' />
+      </viewpoints>
+      <active id='-1' />
+      <device-preview visible='true'>
+        <device name='iPad Air' type='Tablet' />
+        <device name='iPhone X, XS, 11, 11 Pro' type='Phone' />
+      </device-preview>
+      <simple-id uuid='{467B979D-A1EA-4D8B-A65F-C591F35BB1F8}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Accuracy Breakdown'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.13bfx6a1pl8f3d1b3slya0s3hdix].[none:prediction:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{02785B45-93FD-494C-843A-2C03E54DF0DF}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Class Distribution (Signal vs Background)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.13bfx6a1pl8f3d1b3slya0s3hdix].[none:label:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3BFC7888-4FDC-4A6B-8DE0-C5A447716A5B}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Computational Cost by Algorithm (Seconds)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6C53ED42-490D-483B-A387-AA4571075472}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Confusion Matrix'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.13bfx6a1pl8f3d1b3slya0s3hdix].[__tableau_internal_object_id__].[cnt:HIGGS_tableau_extract.csv_26E42FB102C04BEE9A7ADA48CCED2D64:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{F128F0F9-E142-4D10-A0AB-8957CFF0A0E5}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Feature Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.13bfx6a1pl8f3d1b3slya0s3hdix].[none:label:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{804903BB-6B58-46E9-8740-F244F233FF38}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Row Count &amp; Validation'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{9B92096A-ED48-43FC-9662-13E95FFF024B}' />
+    </window>
+  </windows>
+</workbook>
